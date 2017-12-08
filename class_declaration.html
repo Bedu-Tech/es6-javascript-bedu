@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>Learning ECMAScript 6</title>
+    </head>
+    <body>
+        <script>
+            class Student {
+                constructor (name) {
+                    this._name_ = name
+                }
+
+                set name (newName) {
+                    this._name_ = newName
+                }
+
+                printName () {
+                    console.log(this._name_)
+                }
+            }
+
+            let s1 = new Student('Eder')
+            s1.printName()
+            s1.name = 'Bedu'
+            s1.printName()
+            console.log(s1.__proto__)
+        </script>
+    </body>
+</html>
